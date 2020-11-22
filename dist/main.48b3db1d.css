@@ -321,6 +321,7 @@ button {
 .backgrounds {
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 .backgrounds__main {
   height: 100%;
