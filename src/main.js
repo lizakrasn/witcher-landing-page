@@ -23,7 +23,7 @@ function parallax () {
   })
 }
 function mouseParallax (layer, mouseX, speed) {
-  layer.style.transform = 'translateX(' + mouseX / speed + 'px)';
+  layer.style.left = mouseX / speed / 2 + 'px';
 }
 
 parallax();
