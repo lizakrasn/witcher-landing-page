@@ -23,21 +23,22 @@
   }
 
   &__bonus {
+    height: 125px;
     font-family: "Cambria Bold", 'Times New Roman', serif;
     font-size: 152px;
-    line-height: 1;
+    text-align: center;
+    line-height: 120px;
   }
 
   &__text {
     font-family: "Cambria Bold", 'Times New Roman', serif;
     font-size: 48px;
-    line-height: 1;
 
     text-transform: uppercase;
   }
 
   &__code {
-    margin: 32px 0;
+    margin: 45px 0 40px;
   }
 
   &__button {
@@ -52,7 +53,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    border: none;
+    border: 1px solid $accent-color;
     border-radius: 50px;
 
     cursor: pointer;
@@ -61,6 +62,59 @@
     &:hover {
       background-color: #AA0D22;
       color: black;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid white;
+    }
+  }
+
+  @media screen and(max-width: 1200px) {
+    &__info-container {
+      right: 50px;
+    }
+
+    &__bonus {
+      height: 110px;
+      font-size: 120px;
+      line-height: 110px;
+    }
+  
+    &__text {
+      font-size: 35px;
+    }
+
+    &__code {
+      margin: 20px 0px;
+    }
+
+    &__button {
+      width: 200px;
+      padding: 12px 0px;
+  
+      font-size: 15px;
+    }
+  }
+
+  @media screen and(max-width: 1050px) {
+    &__info-container {
+      width: 500px;
+      left: calc(50% - 250px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      align-self: center;
+    }
+
+    &__info {
+      width: 500px;
+      background-color: black;
+      border: 5px solid white;
+      border-radius: 50px;
+      margin-bottom: 70px;
+      padding: 20px;
     }
   }
 }

@@ -8,36 +8,22 @@
     position: absolute;
     top: 0px;
     left: 0px;
-
+  
     background-image: url(/images/landing_page_test_back.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom left;
   }
 
   &__sparks-back {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
     background-image: url(/images/sparks_back.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center left;
   }
 
   &__witcher {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
     background-image: url(/images/witcher.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top left;
+  }
+
+  &__sparks-front {
+    background-image: url(/images/sparks_front.png);
   }
 }
