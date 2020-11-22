@@ -14,6 +14,10 @@
   }
 
   @media screen and(max-width: 1050px) {
-    // background-position: bottom left -240px;
+    background-position: bottom left -250px;
+  }
+
+  @media screen and (max-width: 800px) {
+    background-position: bottom left -170px;
   }
 }
