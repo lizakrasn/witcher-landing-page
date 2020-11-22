@@ -20,4 +20,12 @@
   @media screen and (max-width: 800px) {
     background-position: bottom left -170px;
   }
+
+  @media screen and (max-width: 540px) {
+    background-position: bottom left -120px;
+  }
+
+  @media screen and (max-width: 400px) {
+    background-position: bottom left -150px;
+  }
 }
