@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    animation: scaleInfo 3s;
   }
 
   &__backgrounds {
@@ -117,4 +119,14 @@
       padding: 20px;
     }
   }
+
+  @keyframes scaleInfo {
+    from {
+      transform: scale(0);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  };
 }

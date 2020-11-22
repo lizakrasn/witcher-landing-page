@@ -17,13 +17,29 @@
 
   &__sparks-back {
     background-image: url(/images/sparks_back.png);
+    animation: blinking 3s infinite;
+    animation-direction: alternate-reverse;
   }
 
   &__witcher {
     background-image: url(/images/witcher.png);
+    animation: blinking 3s;
   }
 
   &__sparks-front {
     background-image: url(/images/sparks_front.png);
+    animation: blinking 2s infinite;
+    animation-direction: alternate-reverse;
   }
+
+  
+  @keyframes blinking {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  };
 }

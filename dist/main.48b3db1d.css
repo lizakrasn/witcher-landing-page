@@ -40,6 +40,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: scaleInfo 3s;
 }
 .page__backgrounds {
   position: relative;
@@ -125,6 +126,14 @@ button {
     border-radius: 50px;
     margin-bottom: 70px;
     padding: 20px;
+  }
+}
+@keyframes scaleInfo {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }
 
@@ -218,12 +227,25 @@ button {
 }
 .backgrounds__sparks-back {
   background-image: url(/sparks_back.af08a3bd.png);
+  animation: blinking 3s infinite;
+  animation-direction: alternate-reverse;
 }
 .backgrounds__witcher {
   background-image: url(/witcher.d8322e60.png);
+  animation: blinking 3s;
 }
 .backgrounds__sparks-front {
   background-image: url(/sparks_front.57d68e68.png);
+  animation: blinking 2s infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes blinking {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */
