@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+}
+
+body {
+  height: 100%;
+}
+
+body,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Cambria";
+  src: url("/cambria.f3818c9b.ttc");
+}
+@font-face {
+  font-family: "Cambria Bold";
+  src: url("/cambriab.e531add4.ttf");
+}
+.page {
+  height: 100%;
+  color: white;
+}
+.page__info-container {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 127px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page__backgrounds {
+  position: relative;
+}
+.page__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page__bonus {
+  font-family: "Cambria Bold", "Times New Roman", serif;
+  font-size: 152px;
+  line-height: 1;
+}
+.page__text {
+  font-family: "Cambria Bold", "Times New Roman", serif;
+  font-size: 48px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.page__code {
+  margin: 32px 0;
+}
+.page__button {
+  width: 261px;
+  padding: 20px 0px;
+  background-color: #F73427;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 300ms;
+}
+.page__button:hover {
+  background-color: #AA0D22;
+  color: black;
+}
+
+.code {
+  display: flex;
+}
+.code__input {
+  width: 199px;
+  height: 56px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #F73427;
+  background-color: black;
+  border: 1px dashed #464646;
+  border-right: 1px solid #464646;
+  border-radius: 50px 0px 0px 50px;
+}
+.code__button {
+  height: 56px;
+  width: 145px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  background-color: black;
+  border: 1px dashed #464646;
+  border-left: none;
+  border-radius: 0px 50px 50px 0px;
+  cursor: pointer;
+  transition: 300ms;
+}
+.code__button:hover {
+  background-color: #F73427;
+  border: 1px dashed #F73427;
+}
+
+.backgrounds {
+  height: 100%;
+  position: relative;
+}
+.backgrounds__main {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url(/landing_page_test_back.0ba32b33.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.backgrounds__sparks-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url(/sparks_back.af08a3bd.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+.backgrounds__witcher {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url(/witcher.d8322e60.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+/*# sourceMappingURL=/main.48b3db1d.css.map */

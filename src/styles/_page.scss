@@ -1,0 +1,66 @@
+.page {
+  height: 100%;
+  color: $main-color;
+
+  &__info-container {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 127px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__backgrounds {
+    position: relative;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__bonus {
+    font-family: "Cambria Bold", 'Times New Roman', serif;
+    font-size: 152px;
+    line-height: 1;
+  }
+
+  &__text {
+    font-family: "Cambria Bold", 'Times New Roman', serif;
+    font-size: 48px;
+    line-height: 1;
+
+    text-transform: uppercase;
+  }
+
+  &__code {
+    margin: 32px 0;
+  }
+
+  &__button {
+    width: 261px;
+    padding: 20px 0px;
+
+    background-color: $accent-color;
+    color: $main-color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    border: none;
+    border-radius: 50px;
+
+    cursor: pointer;
+    transition: 300ms;
+
+    &:hover {
+      background-color: #AA0D22;
+      color: black;
+    }
+  }
+}

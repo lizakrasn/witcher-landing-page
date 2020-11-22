@@ -1,5 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+}
+
 body {
-  background-color: aquamarine;
+  height: 100%;
+}
+
+body,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Cambria, "Times New Roman", serif;
+  src: local("cambria"), local("cambriab"), url(/MgOpenModernaBold.f8859bce.ttf);
+  font-weight: bold;
+}
+.page {
+  height: 100%;
+  color: white;
+}
+
+.backgrounds {
+  height: 100%;
+}
+.backgrounds__main {
+  height: 100%;
+  background-image: url(/landing_page_test_back.0ba32b33.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */
